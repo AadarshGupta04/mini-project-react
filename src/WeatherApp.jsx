@@ -5,7 +5,7 @@ import SearchBox from "./SearchBox";
 export default function WeatherApp(){
     const [weatherInfo,setWeatherInfo] = useState({
         city: "Delhi",
-        feelslike: 24.84,
+        feels_like: 24.84,
         temp: 25.05,
         tempMax: 25.05,
         tempMin: 25.05,
@@ -13,8 +13,8 @@ export default function WeatherApp(){
         weather: "haze",
     });
 
-    let updateInfo = (result) => {
-        setWeatherInfo(result);
+    let updateInfo = (newInfo) => {
+        setWeatherInfo(newInfo);
     };
 
     return(
